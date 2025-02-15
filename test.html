@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollytelling dengan JavaScript</title>
+    <style>
+        body {
+            height: 300vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            padding-top: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 300px;
+            height: 200px;
+            margin: 100px auto;
+            background: lightblue;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+
+    <script>
+        const cards = document.querySelectorAll('.card');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        cards.forEach(card => observer.observe(card));
+    </script>
+
+</body>
+</html>

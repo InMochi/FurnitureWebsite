@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 40px;
+            margin: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            background-image: url(heroimg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand span {
+            color: rgb(255, 140, 0);
+        }
+
+        .hero-section {
+            background-image: url("bg1.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 153, 0);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            background-color: transparent;
+        }
+
+        footer {
+            background-color: #343a40;
+        }
+
+        footer a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: rgb(0, 115, 255);
+        }
+
+
+        @media (max-width: 768px) {
+            .responsive-product {
+                justify-content: center;
+            }
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-pad {
+            transition: background-color 0.3s ease, padding 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+            color: black;
+            border-radius: 20px;
+        }
+
+        .hero-pad:hover {
+            background-color: bisque;
+            padding: 40px;
+            transform: translateX(10px);
+            color: rgb(12, 74, 112);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Blog<span>LV</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- product page -->
+
+    <div class="row">
+        <div class="col-lg-4 image-hero">
+            <h3 class="mt-4 d-flex justify-content-center text-hero">
+                <strong style="margin-top: 150px;">
+                    <a class="hero-pad" href="contact.html">Hubungi kami</a>
+                </strong>
+            </h3>
+        </div>
+
+        <div class="col-lg-8" style="height: 400px">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="bc1.jpg" class="d-block w-100" style="height: 414px" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="bc2.jpg" class="d-block w-100" style="height: 414px" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="bc3.jpg" class="d-block w-100" style="height: 414px" />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <hr class="border border-2 border-dark" />
+
+    <!-- product card -->
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="container hidden">
+                <h3 class="text-center"><strong>Best Sale</strong></h3>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 hidden">
+                        <div class="card">
+                            <img src="cardp1.jpg" class="card-img-top" style="width: 354px; height: 250px;" />
+                            <div class="card-body">
+                                <h4 class="card-title">Set Furniture Bedroom</h4>
+                                <hr class="border border-dark border-1">
+                                <p class="card-text">Ini adalah set untuk kamar tidur yang elegan dan cocok sebagai
+                                    interior kamar anak remaja.</p>
+                                <a href="product.html" class="btn btn-info">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 hidden">
+                        <div class="card">
+                            <img src="cardp2.jpg" class="card-img-top" style="width: 354px; height: 250px;" />
+                            <div class="card-body">
+                                <h4 class="card-title">Set Furniture Bedroom</h4>
+                                <hr class="border border-dark border-1">
+                                <p class="card-text">Ini adalah set untuk kamar tidur yang elegan dan cocok sebagai
+                                    interior kamar anak remaja.</p>
+                                <a href="product.html" class="btn btn-info">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 hidden">
+                        <div class="card">
+                            <img src="cardp3.jpg" class="card-img-top" style="width: 354px; height: 250px;" />
+                            <div class="card-body">
+                                <h4 class="card-title">Set Furniture Bedroom</h4>
+                                <hr class="border border-dark border-1">
+                                <p class="card-text">Ini adalah set untuk kamar tidur yang elegan dan cocok sebagai
+                                    interior kamar anak remaja.</p>
+                                <a href="product.html" class="btn btn-info">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="container hidden">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 hidden">
+                        <div class="card">
+                            <img src="cardp4.jpg" class="card-img-top" style="width: 354px; height: 250px;" />
+                            <div class="card-body">
+                                <h4 class="card-title">Set Furniture Bedroom</h4>
+                                <hr class="border border-dark border-1">
+                                <p class="card-text">Ini adalah set untuk kamar tidur yang elegan dan cocok sebagai
+                                    interior kamar anak remaja.</p>
+                                <a href="product.html" class="btn btn-info">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 hidden">
+                        <div class="card">
+                            <img src="cardp5.jpg" class="card-img-top" style="width: 354px; height: 250px;" />
+                            <div class="card-body">
+                                <h4 class="card-title">Set Furniture Bedroom</h4>
+                                <hr class="border border-dark border-1">
+                                <p class="card-text">Ini adalah set untuk kamar tidur yang elegan dan cocok sebagai
+                                    interior kamar anak remaja.</p>
+                                <a href="product.html" class="btn btn-info">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 hidden">
+                        <div class="card">
+                            <img src="cardp6.jpg" class="card-img-top" style="width: 354px; height: 250px;" />
+                            <div class="card-body">
+                                <h4 class="card-title">Set Furniture Bedroom</h4>
+                                <hr class="border border-dark border-1">
+                                <p class="card-text">Ini adalah set untuk kamar tidur yang elegan dan cocok sebagai
+                                    interior kamar anak remaja.</p>
+                                <a href="product.html" class="btn btn-info">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto mt-3 py-3 bg-body-tertiary" style="background: azure">
+        <div class="container">
+            <main class="flex-shrink-0">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h5>Tentang Kami</h5>
+                        <p>
+                            blog lv adalah sebuah toko perabotan yang menjual furniture
+                            sehari-hari dan di toko kami terjamin semua kualitas furniture
+                            nya tahan lama
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h5 style="margin-left: 40px">Kontak</h5>
+                        <ul class="list-unstyled">
+                            <li>Email: Blf@gmail.com</li>
+                            <li>Telepon: +62 123 456 789</li>
+                            <li>Alamat: Jl. RayaCondet. 123, Jakarta</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h5 style="margin-left: 40px">Ikuti Kami</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none">Facebook</a></li>
+                            <li><a href="#" class="text-decoration-none">Instagram</a></li>
+                            <li><a href="#" class="text-decoration-none">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hiddenElements = document.querySelectorAll(".hidden");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    } else {
+                        entry.target.classList.remove("show");
+                    }
+                });
+            });
+
+            hiddenElements.forEach((el) => observer.observe(el));
+        });
+    </script>
+</body>
+
+</html>
